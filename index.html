@@ -13,34 +13,58 @@
       referrerpolicy="no-referrer"
     />
     <style>
-      @media screen and (max-width:500px){
-        #key{
+      @media screen and (max-width: 500px) {
+        #key {
           display: none;
         }
-        #img{
+        #img {
           padding-inline: 6px;
+        }
+        #img1 {
+          width: 100%;
+          padding-inline: 4px;
+        }
       }
-      #img1{
-        width:100%;
-        padding-inline: 4px;
-      }
-    }
     </style>
   </head>
   <body>
     <header class="md:mt-4 md:mx-auto px-4 py-2">
       <div class="flex justify-between md:justify-between max-w-5xl mx-auto">
         <div class="flex mt-1">
-          <h1 class="text-3xl font-bold cursor-pointer hover:scale-110 transition-all duration-500 ">MFX</h1>
+          <h1
+            class="text-3xl font-bold cursor-pointer hover:scale-110 transition-all duration-500"
+          >
+            MFX
+          </h1>
           <p class="text-3xl font-bold text-red-500">.</p>
         </div>
         <div class="hidden md:block">
           <ul class="flex mt-3">
-            <li class="pr-6 font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500">Home</li>
-            <li class="pr-6 font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500">About</li>
-            <li class="pr-6 font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500">Blog</li>
-            <li class="pr-6 font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500">Shop</li>
-            <li class="font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500">Contact</li>
+            <li
+              class="pr-6 font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500"
+            >
+              Home
+            </li>
+            <li
+              class="pr-6 font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500"
+            >
+              About
+            </li>
+            <li
+              class="pr-6 font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500"
+            >
+              Blog
+            </li>
+            <li
+              class="pr-6 font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500"
+            >
+              Shop
+            </li>
+            <li
+              class="font-bold text-gray-600 cursor-pointer hover:scale-110 transition-all duration-500"
+            >
+              Contact
+            </li>
           </ul>
         </div>
         <div class="flex gap-2">
@@ -66,7 +90,9 @@
               placeholder="Search anything"
             />
           </div>
-          <div class="flex bg-red-400 text-white font-semibold px-8 py-3 rounded-lg cursor-pointer hover:scale-110 transition-all duration-500">
+          <div
+            class="flex bg-red-400 text-white font-semibold md:px-8 px-4 py-3 rounded-lg cursor-pointer hover:scale-110 transition-all duration-500"
+          >
             <input type="button" value="Post A Blog" />
             <svg
               class="w-6 pl-2"
@@ -92,10 +118,10 @@
     </header>
     <!--next-->
     <main class="bg-gray-100 md:max-w-5xl md:m-auto">
-      <div class="md:flex md:max-w-5xl m-auto border justify-around mt-20">
+      <div class="md:flex md:max-w-5xl m-auto border justify-around sm:mt-20">
         <div class="bg-gray-100">
           <div class="px-6">
-            <div class="flex pt-10 ">
+            <div class="flex pt-10 md:justify-start justify-center">
               <input
                 class="bg-orange-200 px-4 font-semibold py-1 rounded-lg"
                 type="button"
@@ -103,97 +129,111 @@
               />
               <p class="pl-6 text-sm pt-2">Monday 20 Jun ,2022</p>
             </div>
-            <h1 class="md:text-5xl font-bold font-serif mt-6 text-2xl">
-              It Takes What it Takes <br> To End Something
-            </h1>
-            <p class="mt-5 mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque
-              libero <br>
-              nulla deleniti architecto vero modi id laboriosam rem magnam.
-            </p>
-            <div>
-              <button class="border font-semibold bg-red-500 px-4 py-2 text-white rounded-lg cursor-pointer hover:scale-105 transition-all duration-500 mb-6">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <div class="md:justify-start justify-center flex">
+              <h1 class="md:text-5xl font-bold font-serif mt-6 text-2xl">
+                It Takes What it Takes <br />
+                To End Something
+              </h1>
+            </div>
+            <div class="md:text-start text-center">
+              <p class="mt-5 mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                neque libero <br />
+                nulla deleniti architecto vero modi id laboriosam rem magnam.
+              </p>
+            </div>
+            <div class="md:justify-start justify-center flex">
+              <button
+                class="border font-semibold bg-red-500 px-4 py-2 text-white rounded-lg cursor-pointer hover:scale-105 transition-all duration-500 mb-6"
+              >
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               </button>
             </div>
           </div>
         </div>
-
-        <div class="md:relative md:-translate-y-10 md:-translate-x-9 flex justify-center ">
-          <img
-            class="rounded cursor-pointer"
-            src="2.jpg"
-            width="250px"
-          />
+        <div
+          class="md:relative md:-translate-y-10 md:-translate-x-9 flex justify-center md:w-[250px] md:px-0 w-[100%] px-6"
+        >
+          <img class="rounded cursor-pointer" src="2.jpg" />
         </div>
       </div>
-       
-   </main>
+    </main>
     <!--next-->
-    <div>
-      <div class="px-2">
-        <div class="px-6">
-        <h1 class="md:text-3xl font-bold font-serif md:mx-auto md:max-w-5xl mt-20 flex justify-between">Most Viewed Topic</h1>
-      </div>
-        <div class="">
-        <p class="text-gray-400 md:mx-auto md:max-w-5xl mt-10 flex justify-between hidden">See All Category</p>
-      </div>
-      </div>
+    <div class="md:text-start text-center text-2xl">
+      <h1
+        class="font-bold font-serif mx-auto max-w-5xl mt-10 md:mb-10 md:text-3xl"
+      >
+        Most Viewed Topic
+      </h1>
     </div>
     <!--next-->
-    <div class="md:grid md:grid-cols-6 gap-5 md:max-w-5xl md:m-auto mt-10 md:mb-20 mb-6">
-      <div
-        class="flex justify-center text-white font-bold items-end"
-      >
-      <img class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500 w-80" src="travel.jpg">
+    <div
+      class="md:grid md:grid-cols-6 gap-5 md:max-w-5xl md:m-auto md:mt-10 md:mb-20 mb-10 mx-6"
+    >
+      <div class="flex justify-center text-white font-bold items-end overflow-hidden rounded-lg">
+        <img
+          class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500 "
+          src="travel.jpg"
+        />
         <h2 class="absolute">Travel</h2>
       </div>
-      <div
-        class="flex justify-center text-white font-bold items-end"
-      >
-      <img class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500 w-80 mt-2" src="lifestyle.jpg">
+      <div class="flex justify-center text-white font-bold items-end overflow-hidden rounded-lg mt-2">
+        <img
+          class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500"
+          src="lifestyle.jpg"
+        />
         <h2 class="absolute">Lifestyle</h2>
       </div>
-      <div
-        class="md:flex justify-center text-white font-bold items-end hidden"
-      >
-      <img class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500" src="Animal.jpg">
+      <div class="md:flex justify-center text-white font-bold items-end hidden">
+        <img
+          class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500"
+          src="Animal.jpg"
+        />
         <h2 class="absolute">Animal</h2>
       </div>
-      <div
-        class="flex justify-center text-white font-bold items-end"
-      >
-      <img class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500 w-80 mt-2" src="health.jpg">
+      <div class="flex justify-center text-white font-bold items-end mt-2 overflow-hidden rounded-lg">
+        <img
+          class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500"
+          src="health.jpg"
+        />
         <h2 class="absolute">Health</h2>
       </div>
-      <div
-        class="flex justify-center text-white font-bold items-end"
-      >
-      <img class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500 w-80 mt-2" src="food.jpg">
+      <div class="flex justify-center text-white font-bold items-end overflow-hidden rounded-lg mt-2">
+        <img
+          class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500"
+          src="food.jpg"
+        />
         <h2 class="absolute">Food</h2>
       </div>
-      <div class="flex justify-center text-white font-bold items-end"
-      >
-      <img class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500 w-80 mt-2" src="sports.jpg">
+      <div class="flex justify-center text-white font-bold items-end mt-2 overflow-hidden rounded-lg">
+        <img
+          class="rounded-lg cursor-pointer hover:scale-110 transition-all duration-500 mt-2"
+          src="sports.jpg"
+        />
         <h2 class="absolute">Sports</h2>
       </div>
     </div>
     <!--next-->
     <div class="px-8">
-      <h2 class="md:max-w-5xl md:m-auto md:text-3xl font-serif font-bold md:mb-10">Resecent Articles</h2>
+      <h2
+        class="md:max-w-5xl md:m-auto md:text-3xl text-2xl md:text-start text-center font-serif font-bold md:mb-10"
+      >
+        Resecent Articles
+      </h2>
     </div>
     <!--next-->
     <div class="md:flex max-w-5xl m-auto gap-16 mb-6">
       <div>
-        <div class="overflow-hidden">
+        <div class=" px-4 pt-2 md:px-0">
           <img
-            class="rounded-t-lg cursor-pointer hover:scale-110 transition-all duration-500"
+            class="rounded-lg cursor-pointer md:w-[980px]"
             src="lake.jpg"
-            width="980px" id="img"
+            id="img"
           />
         </div>
-
-        <div class="border rounded-lg shadow-md">
-          <div class="flex px-5 mt-6">
+        <div class="border rounded-lg shadow-md mx-5 md:mx-0 ">
+          <div class="flex px-5 mt-6 ">
             <input
               class="bg-orange-200 px-6 font-semibold py-1 rounded-lg"
               type="button"
@@ -207,14 +247,15 @@
         </div>
       </div>
       <div>
-        <div class="overflow-hidden">
+        <div class=" px-4 pt-2 md:px-0">
           <img
-            class="rounded-t-lg cursor-pointer hover:scale-110 transition-all duration-500"
+            class="rounded-lg cursor-pointer"
             src="laptop.jpg"
-            width="1000px" id="img"
+            width="1000px"
+            id="img"
           />
         </div>
-        <div class="border rounded-lg shadow-md">
+        <div class="border rounded-lg shadow-md mx-5 md:mx-0">
           <div class="flex px-5 mt-6">
             <input
               class="bg-orange-200 px-6 font-semibold py-1 rounded-lg"
@@ -230,15 +271,21 @@
       </div>
     </div>
     <!--next-->
-    <div class="md:max-w-5xl md:m-auto md:text-3xl font-serif font-bold mt-20 px-2">
+    <div
+      class="md:max-w-5xl md:m-auto md:text-3xl text-2xl font-serif font-bold md:mt-20 mt-10 px-2 md:text-start text-center"
+    >
       <h1>Our Latest Podcast</h1>
     </div>
     <!--next-->
-    <div class="md:max-w-5xl md:m-auto md:flex justify-between md:my-10">
-      <div class=" md:w-[800px] md:flex items-end text-white text-2xl font-bold">
-        <div class="overflow-hidden">
-        <img class="md:rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" src="1.jpg" id="img1">
-      </div>
+    <div class="md:max-w-5xl md:m-auto md:flex justify-between md:mt-10 ">
+      <div class="md:w-[800px] md:flex items-end text-white text-2xl font-bold">
+        <div class="overflow-hidden mx-4 md:mx-0">
+          <img
+            class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+            src="1.jpg"
+            id="img1"
+          />
+        </div>
         <h1 class="px-2 pb-2 font-serif w-[500px] absolute" id="key">
           Traveller Visiting Ice Cave With Beauty Amazing Eye-catching.
         </h1>
@@ -247,36 +294,81 @@
         <img
           class="mb-3 rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
           src="WhatsApp Image 2024-06-07 at 09.33.42_1f78324c.jpg"
-          width="190px" id="key"
+          width="190px"
+          id="key"
         />
         <img
           class="mb-3 rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
           src="WhatsApp Image 2024-06-07 at 09.36.01_db2595e3.jpg"
-          width="190px" id="key"
+          width="190px"
+          id="key"
         />
         <img
           class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
           src="WhatsApp Image 2024-06-07 at 09.38.34_14c44153.jpg"
-          width="190px" id="key"
+          width="190px"
+          id="key"
         />
       </div>
     </div>
     <!--next-->
-    <div class="md:max-w-5xl md:m-auto mt-20 px-2">
+    <div class="md:max-w-5xl md:m-auto md:mt-20 mt-10 px-2 text-2xl md:text-start text-center">
       <h1 class="md:text-3xl font-bold font-serif">Latest Post</h1>
     </div>
     <!--next part-->
-    <div class="md:flex max-w-5xl m-auto justify-between mt-10">
+    <div class="md:flex max-w-5xl m-auto justify-between md:mt-10">
       <div>
         <!--div-1-->
-        <div>
-          <div class="md:w-[800px]">
-            <div class="md:flex mb-4 gap-5 ">
-              <div>
-                <img class="w-[400px] rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" id="img" src="light.jpg"/>
+          <div class="md:w-[800px] px-4 md:px-0">
+            <div class="md:flex mb-4 gap-5">
+              <div class="overflow-hidden">
+                <img
+                  class="w-[400px] rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+                  id="img"
+                  src="light.jpg"
+                />
               </div>
               <div id="img">
-              <div class="border rounded-lg cursor-pointer">
+                <div class="border rounded-lg cursor-pointer">
+                  <div class="flex mt-4 px-4">
+                    <input
+                      class="bg-orange-200 px-6 font-semibold py-1 rounded-lg"
+                      type="button"
+                      value="Analytics"
+                    />
+                    <p class="px-4">Monday 20 Jun ,2022</p>
+                  </div>
+                  <h1 class="text-2xl font-semibold font-serif pt-4 px-4">
+                    Find out which posts are a hit with Blogger's built-in
+                    analytics.
+                  </h1>
+                  <p class="font-semibold pt-2 px-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Qui veritatis accusamus repudiandae libero harum sed.
+                  </p>
+                  <div class="flex items-center">
+                    <button
+                      class="pl-4 text-red-500 font-semibold flex items-center uppercase gap-2 mt-3"
+                    >
+                      Read More
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--next-->
+          <div class="md:w-[800px] px-4 md:px-0">
+            <div class="md:flex mb-4 gap-5">
+              <div class="overflow-hidden rounded-lg">
+                <img
+                  class="w-[400px] rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+                  id="img"
+                  src="study.jpg"
+                />
+              </div>
+              <div class="border rounded-lg cursor-pointer mx-1 md:mx-0">
                 <div class="flex mt-4 px-4">
                   <input
                     class="bg-orange-200 px-6 font-semibold py-1 rounded-lg"
@@ -295,7 +387,7 @@
                 </p>
                 <div class="flex items-center">
                   <button
-                    class="pl-4 text-red-500 font-semibold flex items-center uppercase gap-2 mt-3"
+                    class="pl-4 pt-3 text-red-500 font-semibold flex items-center uppercase gap-2"
                   >
                     Read More
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -303,17 +395,19 @@
                 </div>
               </div>
             </div>
-            </div>
           </div>
-        </div>
         <!--next-->
         <div>
-          <div class="md:w-[800px]">
-            <div class="md:flex mb-4 gap-5 ">
-              <div>
-                <img class="w-[400px] rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" id="img" src="study.jpg"/>
+          <div class="md:w-[800px] px-4 md:px-0">
+            <div class="md:flex mb-4 gap-5">
+              <div class="overflow-hidden rounded-lg">
+                <img
+                  class="w-[400px] rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+                  id="img"
+                  src="flower.jpg"
+                />
               </div>
-              <div class="border rounded-lg cursor-pointer">
+              <div class="border rounded-lg cursor-pointer mx-1 md:mx-0">
                 <div class="flex mt-4 px-4">
                   <input
                     class="bg-orange-200 px-6 font-semibold py-1 rounded-lg"
@@ -344,48 +438,16 @@
         </div>
         <!--next-->
         <div>
-          <div class="md:w-[800px]">
+          <div class="md:w-[800px] px-4 md:px-0">
             <div class="md:flex mb-4 gap-5">
-              <div>
-                <img class="w-[400px] rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" id="img" src="flower.jpg" />
+              <div class="overflow-hidden rounded-lg">
+                <img
+                  class="w-[400px] rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+                  id="img"
+                  src="girls.jpg"
+                />
               </div>
-              <div class="border rounded-lg cursor-pointer">
-                <div class="flex mt-4 px-4">
-                  <input
-                    class="bg-orange-200 px-6 font-semibold py-1 rounded-lg"
-                    type="button"
-                    value="Analytics"
-                  />
-                  <p class="px-4">Monday 20 Jun ,2022</p>
-                </div>
-                <h1 class="text-2xl font-semibold font-serif pt-4 px-4">
-                  Find out which posts are a hit with Blogger's built-in
-                  analytics.
-                </h1>
-                <p class="font-semibold pt-2 px-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                  veritatis accusamus repudiandae libero harum sed.
-                </p>
-                <div class="flex items-center">
-                  <button
-                    class="pl-4 pt-3 text-red-500 font-semibold flex items-center uppercase gap-2"
-                  >
-                    Read More
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--next-->
-        <div>
-          <div class="md:w-[800px]">
-            <div class="md:flex mb-4 gap-5">
-              <div>
-                <img class="w-[400px] rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" id="img" src="girls.jpg" />
-              </div>
-              <div class="border rounded-lg cursor-pointer">
+              <div class="border rounded-lg cursor-pointer mx-1 md:mx-0">
                 <div class="flex mt-4 px-4">
                   <input
                     class="bg-orange-200 px-6 font-semibold py-1 rounded-lg"
@@ -415,11 +477,14 @@
           </div>
         </div>
       </div>
-      
+
       <!--end-div-1-->
       <div>
         <!--div2-->
-        <div class="border rounded-lg bg-gray-100 pb-4 mb-4 cursor-pointer mx-2" id="key">
+        <div
+          class="border rounded-lg bg-gray-100 pb-4 mb-4 cursor-pointer mx-2"
+          id="key"
+        >
           <div class="flex justify-around my-2">
             <div>
               <h1 class="font-bold">All Keywords</h1>
@@ -467,121 +532,140 @@
           </div>
         </div>
         <!--next-->
-        <div class="px-2">
-        <div class="flex-grow rounded-lg bg-gray-100 mb-4 cursor-pointer">
-          <div class="flex justify-around mb-2">
-            <div>
-              <h1 class="font-bold">Discover Authors</h1>
+        <div class="px-2 mx-4 md:mx-0">
+          <div class="flex-grow rounded-lg bg-gray-100 mb-4 cursor-pointer">
+            <div class="flex justify-around mb-2">
+              <div>
+                <h1 class="font-bold">Discover Authors</h1>
+              </div>
             </div>
-          </div>
-          <hr />
-          <div class="flex p-1">
-            <div>
-              <img class="rounded-full" src="face.jpg" width="60px"/>
+            <hr />
+            <div class="flex p-1">
+              <div>
+                <img class="rounded-full" src="face.jpg" width="60px" />
+              </div>
+              <div>
+                <p class="font-semibold px-4">Zhang Heng</p>
+                <p class="px-4">Author</p>
+              </div>
             </div>
-            <div>
-              <p class="font-semibold px-4">Zhang Heng</p>
-              <p class="px-4">Author</p>
+            <hr />
+            <div class="flex p-1">
+              <div>
+                <img class="rounded-full" src="face2.jpeg" width="60px" />
+              </div>
+              <div>
+                <p class="font-semibold px-4">Wu Wenjun</p>
+                <p class="px-4">Author</p>
+              </div>
             </div>
-          </div>
-          <hr />
-          <div class="flex p-1">
-            <div>
-              <img class="rounded-full" src="face2.jpeg" width="60px"/>
+            <hr />
+            <div class="flex p-1">
+              <div>
+                <img class="rounded-full" src="face4.jpeg" width="60px" />
+              </div>
+              <div>
+                <p class="font-semibold px-4">Qian Xuesen</p>
+                <p class="px-4">Author</p>
+              </div>
             </div>
-            <div>
-              <p class="font-semibold px-4">Wu Wenjun</p>
-              <p class="px-4">Author</p>
-            </div>
-          </div>
-          <hr />
-          <div class="flex p-1">
-            <div>
-              <img class="rounded-full" src="face4.jpeg" width="60px"/>
-            </div>
-            <div>
-              <p class="font-semibold px-4">Qian Xuesen</p>
-              <p class="px-4">Author</p>
-            </div>
-          </div>
-          <hr />
-          <div class="flex p-1">
-            <div>
-              <img class="rounded-full" src="face4.jpg" width="60px"/>
-            </div>
-            <div>
-              <p class="font-semibold px-4">Zhang Heng</p>
-              <p class="px-4">Author</p>
+            <hr />
+            <div class="flex p-1">
+              <div>
+                <img class="rounded-full" src="face4.jpg" width="60px" />
+              </div>
+              <div>
+                <p class="font-semibold px-4">Zhang Heng</p>
+                <p class="px-4">Author</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
         <!--next-->
-        <div class="px-2">
-        <div class="flex-grow border rounded-lg bg-gray-100 cursor-pointer">
-          <div class="flex justify-around mb-2">
-            <div>
-              <h1 class="font-bold">Discover Authors</h1>
+        <div class="px-2 mx-4 md:mx-0">
+          <div class="flex-grow border rounded-lg bg-gray-100 cursor-pointer">
+            <div class="flex justify-around mb-2">
+              <div>
+                <h1 class="font-bold">Discover Authors</h1>
+              </div>
             </div>
-          </div>
-          <hr />
-          <div class="flex p-2">
-            <div>
-              <img class="rounded-full" src="face.jpg" width="60px"/>
+            <hr />
+            <div class="flex p-2">
+              <div>
+                <img class="rounded-full" src="face.jpg" width="60px" />
+              </div>
+              <div>
+                <p class="font-semibold px-4">Zhang Heng</p>
+                <p class="px-4">Author</p>
+              </div>
             </div>
-            <div>
-              <p class="font-semibold px-4">Zhang Heng</p>
-              <p class="px-4">Author</p>
+            <hr />
+            <div class="flex p-2">
+              <div>
+                <img class="rounded-full" src="face2.jpeg" width="60px" />
+              </div>
+              <div>
+                <p class="font-semibold px-4">Wu Wenjun</p>
+                <p class="px-4">Author</p>
+              </div>
             </div>
-          </div>
-          <hr />
-          <div class="flex p-2">
-            <div>
-              <img class="rounded-full" src="face2.jpeg" width="60px"/>
+            <hr />
+            <div class="flex p-2">
+              <div>
+                <img class="rounded-full" src="face4.jpeg" width="60px" />
+              </div>
+              <div>
+                <p class="font-semibold px-4">Qian Xuesen</p>
+                <p class="px-4">Author</p>
+              </div>
             </div>
-            <div>
-              <p class="font-semibold px-4">Wu Wenjun</p>
-              <p class="px-4">Author</p>
-            </div>
-          </div>
-          <hr />
-          <div class="flex p-2">
-            <div>
-              <img class="rounded-full" src="face4.jpeg" width="60px"/>
-            </div>
-            <div>
-              <p class="font-semibold px-4">Qian Xuesen</p>
-              <p class="px-4">Author</p>
-            </div>
-          </div>
-          <hr />
-          <div class="flex p-2">
-            <div>
-              <img class="rounded-full" src="face4.jpg" width="60px"/>
-            </div>
-            <div>
-              <p class="font-semibold px-4">Zhang Heng</p>
-              <p class="px-4">Author</p>
+            <hr />
+            <div class="flex p-2">
+              <div>
+                <img class="rounded-full" src="face4.jpg" width="60px" />
+              </div>
+              <div>
+                <p class="font-semibold px-4">Zhang Heng</p>
+                <p class="px-4">Author</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
       <!--end-div-2-->
     </div>
 
     <!--nexttt-->
-    <div class="md:max-w-5xl m-auto md:flex justify-evenly my-10 gap-16 col-span-1 p-4" id="key">
+    <div
+      class="md:max-w-5xl m-auto md:flex justify-evenly my-10 gap-16 col-span-1 p-4"
+      id="key"
+    >
       <div>
         <button
           class="px-3 py-1 border rounded-full font-semibold bg-red-500 text-white cursor-pointer hover:scale-110 transition-all duration-500"
         >
           1
         </button>
-        <button class="px-3 py-1 border rounded-full font-semibold cursor-pointer hover:scale-110 transition-all duration-500">2</button>
-        <button class="px-3 py-1 border rounded-full font-semibold cursor-pointer hover:scale-110 transition-all duration-500">3</button>
-        <button class="px-3 py-1 border rounded-full font-semibold cursor-pointer hover:scale-110 transition-all duration-500">4</button>
-        <button class="px-3 py-1 border rounded-full font-semibold cursor-pointer hover:scale-110 transition-all duration-500">5</button>
+        <button
+          class="px-3 py-1 border rounded-full font-semibold cursor-pointer hover:scale-110 transition-all duration-500"
+        >
+          2
+        </button>
+        <button
+          class="px-3 py-1 border rounded-full font-semibold cursor-pointer hover:scale-110 transition-all duration-500"
+        >
+          3
+        </button>
+        <button
+          class="px-3 py-1 border rounded-full font-semibold cursor-pointer hover:scale-110 transition-all duration-500"
+        >
+          4
+        </button>
+        <button
+          class="px-3 py-1 border rounded-full font-semibold cursor-pointer hover:scale-110 transition-all duration-500"
+        >
+          5
+        </button>
       </div>
 
       <div>
@@ -593,15 +677,17 @@
       </div>
     </div>
     <!--next-->
-    <div class="md:max-w-5xl m-auto grid md:grid-cols-3 gap-10 mb-10 col-span-1">
-      <div class="px-2 py-2">
-        <h3 class="text-2xl font-bold mb-4">MFX.</h3>
-        <p class="font-semibold text-gray-500">
+    <div
+      class="md:max-w-5xl m-auto grid md:grid-cols-3 gap-10 mb-10 col-span-1"
+    >
+      <div class="px-2 py-2 mx-4 md:mx-0">
+        <h3 class="text-2xl font-bold mb-4 md:text-start text-center">MFX.</h3>
+        <p class="font-semibold text-gray-500 md:text-start text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
           doloremque consectetur modi. Iure ea magni amet minus dicta
           perferendis hic.
         </p>
-        <div class="mt-6">
+        <div class="mt-6 md:text-start text-center">
           <i
             class="fa fa-facebook border px-3 py-2 text-white bg-red-500 rounded-md cursor-pointer hover:scale-110 transition-all duration-500"
             aria-hidden="true"
@@ -625,23 +711,47 @@
         </div>
       </div>
       <div class="px-2">
-        <h4 class="md:font-bold text-2xl mb-6">Instagram Post</h4>
-        <div class="">
+        <h4 class="md:font-bold text-2xl mb-6 md:text-start text-center">Instagram Post</h4>
+        <div class="mx-10 md:mx-0">
           <div class="flex gap-2">
-            <img class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" src="seen1.jpeg" width="90px" />
-            <img class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" src="seen2.jpeg" width="90px" />
-            <img class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" src="seen3.jpeg" width="90px" />
+            <img
+              class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+              src="seen1.jpeg"
+              width="90px"
+            />
+            <img
+              class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+              src="seen2.jpeg"
+              width="90px"
+            />
+            <img
+              class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+              src="seen3.jpeg"
+              width="90px"
+            />
           </div>
           <div class="flex gap-2 pt-2">
-            <img class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" src="seen4.jpeg" width="90px" />
-            <img class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" src="seen5.jpeg" width="90px" />
-            <img class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500" src="seen6.webp" width="90px" />
+            <img
+              class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+              src="seen4.jpeg"
+              width="90px"
+            />
+            <img
+              class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+              src="seen5.jpeg"
+              width="90px"
+            />
+            <img
+              class="rounded-lg cursor-pointer hover:scale-105 transition-all duration-500"
+              src="seen6.webp"
+              width="90px"
+            />
           </div>
         </div>
       </div>
-      <div class="px-2">
-        <h1 class="md:font-bold text-2xl">Recent Post</h1>
-        <p class="mt-3 font-semibold text-gray-500 w-80">
+      <div class="px-2 mx-4 md:mx-0 md:text-start text-center">
+        <h1 class="md:font-bold text-2xl ">Recent Post</h1>
+        <p class="mt-3 font-semibold text-gray-500 w-80 ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
           odit harum exercitationem voluptatibus autem! Corrupti consequuntur
           commodi fugiat dolores voluptatibus.
@@ -653,8 +763,5 @@
         />
       </div>
     </div>
-
-
-
   </body>
 </html>
